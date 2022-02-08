@@ -1,9 +1,8 @@
 package edu.escuelaing.arep;
 
 import static spark.Spark.*;
-
 import com.google.gson.Gson;
-import edu.escuelaing.temperatura.*;
+
 public class SparkWebApp {
 	
 	

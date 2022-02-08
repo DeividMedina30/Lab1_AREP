@@ -1,10 +1,11 @@
-package edu.escuelaing.temperatura;
+package edu.escuelaing.arep;
 
-public class Fahrenheit_a_Celsius extends temperatura{
+
+public class Celsius_a_Fahrenheit extends temperatura {
 	
 	private double newTemperatura;
-
-	public Fahrenheit_a_Celsius(double temperaturaDada) {
+	
+	public Celsius_a_Fahrenheit(double temperaturaDada) {
 		super(temperaturaDada);
 	}
 
@@ -13,7 +14,7 @@ public class Fahrenheit_a_Celsius extends temperatura{
 	}
 
 	public void setNewTemperatura(double newTemperatura) {
-		this.newTemperatura = (newTemperatura - 32) / 1.8;
+		this.newTemperatura = (1.8 * newTemperatura) + 32;
 	}
 
 	@Override

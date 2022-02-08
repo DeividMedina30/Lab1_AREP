@@ -1,4 +1,4 @@
-package edu.escuelaing.temperatura;
+package edu.escuelaing.arep;
 
 /*
  * Creado por Deivid Medina en 07/02/2022
