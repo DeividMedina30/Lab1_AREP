@@ -18,11 +18,7 @@ public class SparkWebApp {
             });
         });
     }
-    
-    /*
-     * 	Heroku asigna a su aplicaci�n un nuevo puerto cada vez que la implementa
-     *  Debemos obtener este puerto y decirle a Spark que lo use
-     */
+
     public	static int getHerokuAssignedPort() {
     	ProcessBuilder processBuilder = new ProcessBuilder();
         if (processBuilder.environment().get("PORT") != null) {
@@ -32,10 +28,12 @@ public class SparkWebApp {
     }
 
     private static Object getCelsius(double valor) {
-        return new Gson().toJson(new Celsius_a_Fahrenheit(valor));
+        Celsius_a_Fahrenheit celsius_a_fahrenheit = new Celsius_a_Fahrenheit(valor);
+        return new Gson().toJson(celsius_a_fahrenheit.convertirTemperatura());
     }
 
     private static Object getFahrenheit(double valor) {
-        return new Gson().toJson(new Fahrenheit_a_Celsius(valor));
+        Fahrenheit_a_Celsius fahrenheit_a_celsius =  new Fahrenheit_a_Celsius(valor);
+        return new Gson().toJson(fahrenheit_a_celsius.convertirTemperatura());
     }
 }
