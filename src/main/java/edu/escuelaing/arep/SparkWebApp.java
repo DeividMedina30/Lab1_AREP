@@ -8,7 +8,11 @@ public class SparkWebApp {
 	
     public static void main(String[] args) {
     	port(getHerokuAssignedPort());
-        get("/hello", (req, res) -> "Hello Heroku");
+        staticFiles.location("/paginaWeb");
+        get("/", (req, res) -> {
+            res.redirect("/index.html");
+            return null;
+        });
         path("/calcularTemperatura",()->{
             get("/Celsius/:value", (req, res)->{
                 return getCelsius(Double.valueOf(req.params(":value")));
