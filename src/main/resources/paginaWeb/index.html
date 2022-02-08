@@ -5,28 +5,24 @@
     <title>ConvertirTemperatura</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
+    <body>
 
-    <p>"Calculadora de Temperatura"</p>
+        <p>"Calculadora de Temperatura"</p>
 
-    <section>
-        <p>"FAHRENHEIT A CELSIUS"</p>
-        <input type="text" class="form-control" placeholder="Fahrenheit" id="fahrenheitd" style="margin-bottom: 10px">
-        <input id="button-fahrenheit" type="submit" value="calculate" class="btns" >
-        <h4  id="celsiusd"></h4>
-    </section>
+        <form>
+            <p>"Fahrenheit a Celsius"</p>
+            <input id="fahrenheitd" type="text" class="form-control" placeholder="Ingrese los grados Fahrenheit" >
+            <input id="fahrenheit_button" type="submit" value="calcularCelsius" class="btns" >
+            <h4  id="celsiusd"></h4>
+        </form>
 
-    <section>
-        <p>"CELSIUS A FAHRENHEIT"</p>
-        <input type="text" class="form-control" placeholder="Celsius" id="Celsius" style="margin-bottom: 10px">
-        <input id="button-celsiusafahrenheit" type="submit" value="calculate" class="btns" >
-        <h4  id="fahrenheit"></h4>
-    </section>
+        <form>
+            <p>"Celsius a Fahrenheit"</p>
+            <input id="Celsius" type="text" class="form-control" placeholder="Ingrese los grados Celsius" >
+            <input id="celsius_button" type="submit" onclick="capturarCelsius()" value="calcularFahrenheit" class="btns" >
+            <h4  id="fahrenheit"></h4>
+        </form>
 
-</body>
-
-<script type="text/javascript" src="js/app.js" ></script>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-
+        <script type="text/javascript" src="index.js" ></script>
+    </body>
 </html>
