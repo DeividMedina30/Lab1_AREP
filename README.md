@@ -75,6 +75,17 @@ que significa que clonamos el repositorio, y damos la url del repositorio.
 
 ### DESPLEGANDO API EN HEROKU.
 
+[![ProjectDesign](https://www.herokucdn.com/deploy/button.png)](https://areptemperatura.herokuapp.com/?)
+
+
+### TECNOLOGÍAS USADAS PARA EL DESARROLLO DEL LABORATORIO.
+
+* [Spark](http://sparkjava.com) - Framework para desarrollo de aplicaciones web.
+
+* [Maven](https://maven.apache.org/) - Administrador de dependencias.
+
+* [Heroku](https://heroku.com) - Plataforma de despliegue en la nube.
+
 ### AUTOR.
 
 > Deivid Sebastián Medina Rativa.
