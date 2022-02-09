@@ -13,7 +13,7 @@ function capturarCelsius(){
 }
 
 function capturarFahrenheit(){
-	var fahrenheit = document.getElementById("Celsius").value;
+	var fahrenheit = document.getElementById("Fahrenheitd").value;
 	const url = 'https://areptemperatura.herokuapp.com/calcularTemperatura/Fahrenheit'
     fetch(`${url}/${fahrenheit}`)
 	.then(response => response.json())
