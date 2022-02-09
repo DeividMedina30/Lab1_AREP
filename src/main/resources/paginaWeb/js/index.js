@@ -21,15 +21,16 @@ celcius.addEventListener('click', function(){
 });
 
 //Función que me permite capturar los datos de grado Fahrenheit para convertir a Celsius.
-function capturarFahrenheit(){
-	var fahrenheit = document.getElementById("Fahrenheitd").value;
-	const url = 'https://areptemperatura.herokuapp.com/calcularTemperatura/Fahrenheit'
-    fetch(`${url}/${fahrenheit}`)
-	.then(response => response.json())
-	.then(data => {
+var fahrenheit = document.getElementById("fahrenheit_button");
+fahrenheit.addEventListener('click', function(){
+    const url = 'https://areptemperatura.herokuapp.com/calcularTemperatura/Fahrenheit'
+    var valorFahrenheitd = document.getElementById('Fahrenheitd').value;
+    fetch(`${url}/${valorFahrenheitd}`)
+    .then(response => response.json())
+    .then(data => {
 		let fahrenheitVer = document.getElementById('fahrenheitNew')
-		fahrenheitVer.innerHTML = `<p>Los grados Fahrenheit: ${fahrenheit} a Celsius es: ${data}</p>`
+		fahrenheitVer.innerHTML = `<p>Los grados Fahrenheit: ${valorFahrenheitd} a Celsius es: ${data}</p>`
 		console.log(data)
-	})
-	.catch(err=>console.log(err))
-}
+    })
+    .catch(err=>console.log(err))
+});
