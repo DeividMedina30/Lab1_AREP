@@ -1,4 +1,11 @@
 
+/* Funciones JavaScript
+   Versión 1.1
+   Autor: Deivid Medina
+   Curso: Arquitectura Empresarial
+*/
+
+//Función que me permite capturar los datos de grado Celsius para convertir a Fahrenheit.
 function capturarCelsius(){
 	var celcius = document.getElementById("Celsius").value;
 	const url = 'https://areptemperatura.herokuapp.com/calcularTemperatura/Celsius'
@@ -12,6 +19,7 @@ function capturarCelsius(){
 	.catch(err=>console.log(err))
 }
 
+//Función que me permite capturar los datos de grado Fahrenheit para convertir a Celsius.
 function capturarFahrenheit(){
 	var fahrenheit = document.getElementById("Fahrenheitd").value;
 	const url = 'https://areptemperatura.herokuapp.com/calcularTemperatura/Fahrenheit'
