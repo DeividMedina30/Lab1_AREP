@@ -11,18 +11,14 @@
 
         <form>
             <p>"Fahrenheit a Celsius"</p>
-            <input id="Fahrenheitd" type="text" class="form-control" placeholder="Ingrese los grados Fahrenheit" >
+            <input id="Fahrenheitd" type="number" class="form-control" placeholder="Ingrese los grados Fahrenheit" >
             <input id="fahrenheit_button" type="submit" onclick="capturarFahrenheit()" value="calcularCelsius" class="btns" >
-			<div class="p-field p-col-12 p-md-4">
-                <p:outputLabel for="@next" value="Basic Spinner"/>
-                <p:spinner id="basic" value="#{spinnerView.number1}"/>
-            </div>
             <div  id="fahrenheitNew"></div>
         </form>
 
         <form>
             <p>"Celsius a Fahrenheit"</p>
-            <input id="Celsius" type="text" class="form-control" placeholder="Ingrese los grados Celsius" >
+            <input id="Celsius" type="number" class="form-control" placeholder="Ingrese los grados Celsius" >
             <input id="celsius_button" type="submit" onclick="capturarCelsius()" value="calcularFahrenheit" class="btns" >
             <div  id="celsiusNew" ></div>
         </form>
