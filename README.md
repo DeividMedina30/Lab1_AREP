@@ -75,7 +75,7 @@ que significa que clonamos el repositorio, y damos la url del repositorio.
 
 ### DESPLEGANDO API EN HEROKU.
 
-[![ProjectDesign](https://www.herokucdn.com/deploy/button.png)](https://areptemperatura.herokuapp.com/?)
+[![ProjectDesign](https://dashboard.heroku.com/apps/areptemperatura)
 
 
 ### TECNOLOGÍAS USADAS PARA EL DESARROLLO DEL LABORATORIO.
