@@ -5,7 +5,6 @@ function capturarCelsius(){
 	.then(response => response.json())
 	.then(data => {
 		let celciusVer = document.getElementById('celsiusNew')
-		celciusVer.innerHTML = '<p>${data}</p>'
 		console.log(data)
 	})
 	.catch(err=>console.log(err))
