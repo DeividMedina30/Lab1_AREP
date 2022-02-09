@@ -86,6 +86,18 @@ que significa que clonamos el repositorio, y damos la url del repositorio.
 
 * [Heroku](https://heroku.com) - Plataforma de despliegue en la nube.
 
+### LIMITACIONES.
+
+El estado actual del laboratorio es que no cuenta con pruebas concurrentes, debido a que no se logro implementar de manera exitosa. 
+Por parte del API, podemos decir que las limitaciones son en cuanto al número de peticiones que se puede realizar. Ya que se podría tener un array que reciba varias temperaturas al mismo tiempo y realice la conversión. Además de solo tener dos tipos de conversión, de grados Celsius a Fahrenheit y de grados Fahrenheit a Celsius.
+Encontramos que otra limitación puede ser la manera en cómo se desarrolló el proyecto, ya que no se paramos exactamente por un backend y frontend. Con el fin de distinguir correctamente cada parte del API.
+
+### EXTENDER.
+
+Para poder extender el proyecto podemos pensar en sus limitaciones, como lo son el tipo de conversión que se realiza ya que es muy limitado. Por lo cual podemos realizar otra conversión como lo son los grados Kelvin.
+En cuanto a la aplicación podemos desarrollar las pruebas concurrentes con la finalidad de poder observar como son ejecutadas pruebas en distintos momentos al servicio de la aplicación. Así mismo separar el proyecto por packages de backend y frontend, con la finalidad de ser más claro con los procesos.
+
+
 ### AUTOR.
 
 > Deivid Sebastián Medina Rativa.
