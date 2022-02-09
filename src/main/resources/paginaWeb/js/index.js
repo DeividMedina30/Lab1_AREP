@@ -6,9 +6,6 @@
 */
 
 //Función que me permite capturar los datos de grado Celsius para convertir a Fahrenheit.
-
-
-
 var celcius = document.getElementById("celsius_button");
 celcius.addEventListener('click', function(){
     const url = 'https://areptemperatura.herokuapp.com/calcularTemperatura/Celsius'
