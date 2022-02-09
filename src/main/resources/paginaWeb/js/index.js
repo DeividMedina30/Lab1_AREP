@@ -17,7 +17,7 @@ celcius.addEventListener('click', function(){
     .then(response => response.json())
     .then(data => {
         let celciusVer = document.getElementById('celsiusNew')
-        celciusVer.innerHTML = `<p>Los grados Celsius: ${celcius} a Fahrenheit es: ${data}</p>`
+        celciusVer.innerHTML = `<p>Los grados Celsius: ${valorCelsius} a Fahrenheit es: ${data}</p>`
     	console.log(data)
     })
     .catch(err=>console.log(err))
