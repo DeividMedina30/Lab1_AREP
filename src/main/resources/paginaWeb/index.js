@@ -1,7 +1,7 @@
 function capturarCelsius(){
 	const url = 'https://areptemperatura.herokuapp.com/calcularTemperatura/Celsius'
     var celcius = document.getElementById("Celsius").value;
-    fetch('${url}/${celcius}')
+    fetch(`${url}/${celcius}`)
 	.then(response => response.json())
 	.then(data => {
 		let celciusVer = document.getElementById('celsiusNew')
