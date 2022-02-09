@@ -3,11 +3,12 @@ package edu.escuelaing.arep;
 import static spark.Spark.*;
 import com.google.gson.Gson;
 
-/*
+/**
  * Funciones Java
  * Curso: Arquitectura Empresaria
- * @version: 1.1
- * @author: Deivid Medina
+ * @version 1.1
+ * @author Deivid Medina
+ * 
  */
 public class SparkWebApp {
 	
@@ -32,7 +33,7 @@ public class SparkWebApp {
         });
     }
     
-    /*
+    /**
      * Funcón que me permite obtener el puerto por el cual heroku despliega nuestra aplicación.
      */
     public	static int getHerokuAssignedPort() {
@@ -43,7 +44,7 @@ public class SparkWebApp {
         return 4567; //return default port if heroku-port isn't set (i.e. on localhost)
     }
 
-    /*
+    /**
      * Funcón getCelsius, me retorna la conversión de grados Celsius a Fahrenheit, el valor es un double.
      */
     private static Object getCelsius(double valor) {
@@ -51,7 +52,7 @@ public class SparkWebApp {
         return new Gson().toJson(celsius_a_fahrenheit.convertirTemperatura());
     }
     
-    /*
+    /**
      * Funcón getCelsius, me retorna la conversión de grados Fahrenheit a Celsius, el valor es un double.
      */
     private static Object getFahrenheit(double valor) {
