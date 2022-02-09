@@ -9,7 +9,7 @@
 
 
 
-var celcius = document.getElementById("Celsius");
+var celcius = document.getElementById("celsius_button");
 celcius.addEventListener('click', function(){
     const url = 'https://areptemperatura.herokuapp.com/calcularTemperatura/Celsius'
     var valorCelsius = document.getElementById('Celsius').value;
