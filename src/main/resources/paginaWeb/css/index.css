@@ -12,6 +12,11 @@ form {
   background: #fafafa;
 }
 
+img{
+  display:block;
+  margin:auto;
+}
+
 input[type=number] {
     width: 65%;
     padding: 16px 32px;
